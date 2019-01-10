@@ -1,5 +1,5 @@
 name = "Kiley"
-message = name + " I'm gonna dick you down"
+message = name + " Hi, "
 
 print(message)
 
