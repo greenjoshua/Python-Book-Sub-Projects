@@ -1,14 +1,13 @@
-names = ['Owen' , 'James' , 'Taylor' , 'Luke']
-print(names[-1].title())
+from name_function import get_formatted_name
 
-message = names[0].title() + " what's up fam?"
-print(message)
+print("Enter 'q' at any time to quit.")
+while True:
+	first = input("\nPlease give me a first name: ")
+	if first == 'q':
+		break
+	last = input("Please give me a last name: ")
+	if last == 'q':
+		break
 
-message = names[1].title() + " what's up fam?"
-print(message)
-
-message = names[2].title() + " what's up fam?"
-print(message)
-
-message = names[3].title() + " what's up fam?"
-print(message)
+	formatted_name = get_formatted_name(first, last)
+	print("\tNeatly formatted name: " + formatted_name + ".")
